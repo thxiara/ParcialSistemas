@@ -1,0 +1,4 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^pages(/|$) - [R=404,L]
+</IfModule>

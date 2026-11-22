@@ -1,0 +1,32 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Solo se permite acceso a:
+    RewriteCond %{REQUEST_URI} !^/$
+    RewriteCond %{REQUEST_URI} !^/(api|front)(/|$)
+    RewriteCond %{REQUEST_URI} !^/(cat)(/|$)
+    RewriteRule ^ - [R=404,L]
+
+    # ====================================================
+    # TRÁFICO DE LA API (Repartidores)
+    # ====================================================
+    # Si la URL solicitada empieza con "api/"...
+    RewriteCond %{REQUEST_URI} ^/api/
+    # ...y no es un archivo físico que exista (como una imagen)...
+    RewriteCond %{REQUEST_FILENAME} !-f
+    # ...y tampoco es una carpeta real...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    # ...entonces, manda TODO al index.php de la carpeta api.
+    RewriteRule ^api/(.*)$ /api/index.php [L,QSA]
+
+    # ====================================================
+    # TRÁFICO DEL FRONT (Vistas)
+    # ====================================================
+
+    # La raíz de dirige a index.php:
+    RewriteRule ^$ /api/index.php [L]
+    # Todo lo que no sea un archivo o directorio se dirige a index.php
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^ /api/index.php [L,QSA]
+</IfModule>

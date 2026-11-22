@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/front/dist/js/api.js" defer></script>
+    <script src="/front/dist/js/pages/call-cats.js" defer></script>
+    <script src="/front/dist/js/pages/cats.js" defer></script>
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="navbar-inner">
+      <a href="/" class="navbar-brand">
+        <span class="navbar-name">Cats</span>
+      </a>
+
+      <nav class="navbar-links" aria-label="Navegación principal">
+        <a href="/" class="navbar-link active">Inicio</a>
+        <a href="/cat/list" class="navbar-link">Listado</a>
+        <a href="/cat/add" class="navbar-link">Agregar</a>
+      </nav>
+    </div>
+  </header>
+
+    <main class="cat-list">
+
+        <div class="list-top">
+            <h1 class="admin-title">Gatos registrados</h1>
+        </div>
+
+        <div class="table-wrap">
+            <table class="cats-table">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Raza</th>
+                        <th>Edad (años)</th>
+                        <th>ID</th>
+                    </tr>
+                </thead>
+                <tbody id="cats-body"></tbody>
+            </table>
+        </div>
+
+        <div class="table-footer">
+            <p class="table-info" id="table-info"></p>
+            <nav class="pagination" id="pagination" aria-label="Paginación"></nav>
+        </div>
+
+    </main>
+</body>
+</html>
