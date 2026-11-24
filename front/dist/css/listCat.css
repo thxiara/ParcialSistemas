@@ -83,6 +83,16 @@
     font-size: 12px;
 }
 
+.cellAction {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.actionBtn {
+    border-radius: 7px;
+}
+
 .pagination {
     display: flex;
     align-items: center;
