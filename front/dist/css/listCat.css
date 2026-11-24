@@ -83,7 +83,7 @@
     font-size: 12px;
 }
 
-.cellAction {
+.cell-action {
     display: flex;
     flex-direction: row;
     justify-content: center;
