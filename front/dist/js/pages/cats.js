@@ -58,7 +58,7 @@
                 location.href = `/cat/edit?id=${encodeURIComponent(cat.id)}`;
             });
             editButton.textContent = "Editar";
-            editButton.className = "home-button home-button-primary actionBtn";
+            editButton.classList.add("home-button home-button-primary actionBtn")
 
             // Botón de borrado: se apoya en callCat.remove(), que ya existe.
             // Se usa delegación de eventos más abajo para no crear un listener
@@ -67,7 +67,7 @@
             deleteButton.type = "button";
             deleteButton.dataset.deleteCat = cat.id;
             deleteButton.textContent = "Eliminar";
-            deleteButton.className = "home-button home-button-secondary actionBtn";
+            deleteButton.classList.add("home-button home-button-secondary actionBtn")
 
             actionsCell.append(editButton, deleteButton);
             row.append(actionsCell);
