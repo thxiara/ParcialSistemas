@@ -1,0 +1,105 @@
+
+.cat-add {
+    width: min(1000px, 90%);
+    min-height: calc(100vh - 82px);
+    margin: 0 auto;
+    padding: 75px 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.form-card {
+    width: 100%;
+    max-width: 560px;
+    padding: 45px 50px;
+    background-color: #FFFFFF;
+    border: 1px solid var(--color-beige);
+    box-shadow: 0 15px 40px rgba(41, 35, 31, 0.07);
+}
+
+.form-title {
+    margin-bottom: 35px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid var(--color-beige);
+    color: var(--color-wine);
+    font-family: var(--font-title);
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    color: var(--color-dark);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+}
+
+.form-group input {
+    width: 100%;
+    min-height: 49px;
+    padding: 0 15px;
+    border: 1px solid var(--color-beige);
+    border-radius: 2px;
+    outline: none;
+    background-color: var(--color-cream);
+    color: var(--color-dark);
+    font-family: var(--font-body);
+    font-size: 13px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-group input::placeholder {
+    color: #A49A93;
+}
+
+.form-group input:focus {
+    border-color: var(--color-rose);
+    box-shadow: 0 0 0 3px rgba(185, 135, 142, 0.13);
+}
+
+.form-group input[readonly] {
+    background-color: var(--color-beige);
+    color: var(--color-gray);
+    cursor: not-allowed;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 35px;
+    padding-top: 25px;
+    border-top: 1px solid var(--color-beige);
+}
+
+.btn-primary {
+    min-height: 48px;
+    padding: 0 28px;
+    border: 1px solid var(--color-wine);
+    border-radius: 2px;
+    background-color: var(--color-wine);
+    color: var(--color-cream);
+    font-family: var(--font-body);
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-burgundy);
+    border-color: var(--color-burgundy);
+}
+
+.btn-primary:focus-visible {
+    outline: 2px solid var(--color-gold);
+    outline-offset: 3px;
+}

@@ -1,0 +1,59 @@
+
+@media (max-width: 900px) {
+    .cat-add {
+        width: 92%;
+        padding: 60px 0;
+    }
+
+    .form-card {
+        max-width: 540px;
+        padding: 40px;
+    }
+
+    .form-title {
+        font-size: 33px;
+    }
+}
+
+@media (max-width: 600px) {
+    .cat-add {
+        width: 92%;
+        min-height: calc(100vh - 82px);
+        padding: 40px 0;
+    }
+
+    .form-card {
+        padding: 28px 22px;
+    }
+
+    .form-title {
+        margin-bottom: 28px;
+        padding-bottom: 18px;
+        font-size: 29px;
+    }
+
+    .form-group {
+        gap: 8px;
+        margin-bottom: 21px;
+    }
+
+    .form-group label {
+        font-size: 11px;
+    }
+
+    .form-group input {
+        min-height: 46px;
+        padding: 0 12px;
+        font-size: 12px;
+    }
+
+    .form-actions {
+        margin-top: 28px;
+        padding-top: 20px;
+    }
+
+    .btn-primary {
+        width: 100%;
+        min-height: 47px;
+    }
+}

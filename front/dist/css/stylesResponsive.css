@@ -1,0 +1,174 @@
+
+@media (max-width: 900px) {
+
+    .home-hero {
+        padding: 55px 40px;
+        grid-template-columns: 1fr 0.8fr;
+    }
+
+    .home-hero h1 {
+        font-size: 48px;
+    }
+
+    .home-circle-one {
+        width: 270px;
+        height: 270px;
+    }
+
+    .home-circle-two {
+        width: 205px;
+        height: 205px;
+    }
+
+    .home-cat-card {
+        width: 175px;
+        height: 235px;
+    }
+
+    .home-cat-symbol {
+        font-size: 105px;
+    }
+
+    .home-intro {
+        gap: 45px;
+    }
+
+    .home-intro-heading h2 {
+        font-size: 34px;
+    }
+
+    .home-features {
+        gap: 14px;
+    }
+
+    .home-feature-card {
+        padding: 24px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .navbar {
+        min-height: 72px;
+    }
+
+    .navbar-inner {
+        width: 90%;
+    }
+
+    .navbar-name {
+        font-size: 27px;
+    }
+
+    .navbar-links {
+        gap: 17px;
+    }
+
+    .navbar-link {
+        font-size: 11px;
+    }
+
+    .home-hero {
+        width: 90%;
+        margin-top: 25px;
+        padding: 45px 25px 30px;
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .home-hero h1 {
+        font-size: 43px;
+    }
+
+    .home-hero-content > p {
+        font-size: 13px;
+    }
+
+    .home-hero-actions {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .home-button {
+        width: 100%;
+    }
+
+    .home-hero-decoration {
+        min-height: 260px;
+    }
+
+    .home-circle-one {
+        width: 240px;
+        height: 240px;
+    }
+
+    .home-circle-two {
+        width: 185px;
+        height: 185px;
+    }
+
+    .home-cat-card {
+        width: 155px;
+        height: 205px;
+    }
+
+    .home-cat-symbol {
+        font-size: 90px;
+    }
+
+    .home-intro {
+        width: 85%;
+        margin: 70px auto 40px;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .home-intro-heading h2 {
+        font-size: 32px;
+    }
+
+    .home-intro > p {
+        font-size: 13px;
+    }
+
+    .home-features {
+        width: 90%;
+        margin-bottom: 60px;
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .home-feature-card {
+        min-height: 250px;
+    }
+
+    .home-footer {
+        padding: 30px 5%;
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+    }
+
+}
+
+@media (max-width: 360px) {
+
+    .navbar-links {
+        gap: 11px;
+    }
+
+    .navbar-link {
+        font-size: 10px;
+    }
+
+    .home-hero h1 {
+        font-size: 36px;
+    }
+
+    .home-eyebrow {
+        font-size: 9px;
+        letter-spacing: 2px;
+    }
+
+}

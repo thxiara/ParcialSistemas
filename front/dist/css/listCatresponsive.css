@@ -1,0 +1,84 @@
+
+@media (max-width: 900px) {
+    .cat-list {
+        width: 92%;
+        margin: 55px auto 75px;
+    }
+
+    .list-top {
+        margin-bottom: 25px;
+    }
+
+    .cats-table th,
+    .cats-table td {
+        padding: 17px 18px;
+    }
+
+    .table-footer {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    .cat-list {
+        width: 94%;
+        margin: 40px auto 60px;
+    }
+
+    .list-top {
+        align-items: flex-start;
+        margin-bottom: 22px;
+        padding-bottom: 18px;
+    }
+
+    .admin-title {
+        font-size: 30px;
+    }
+
+    .table-wrap {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .cats-table {
+        min-width: 650px;
+    }
+
+    .cats-table th {
+        padding: 16px 14px;
+        font-size: 10px;
+    }
+
+    .cats-table td {
+        padding: 16px 14px;
+        font-size: 12px;
+    }
+
+    .table-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 20px;
+    }
+
+    .table-info {
+        font-size: 11px;
+    }
+
+    .pagination {
+        width: 100%;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+
+    .pagination .page-btn {
+        min-width: 33px;
+        height: 33px;
+        padding: 0 8px;
+        font-size: 11px;
+    }
+
+    .pagination .page-ellipsis {
+        font-size: 12px;
+    }
+}

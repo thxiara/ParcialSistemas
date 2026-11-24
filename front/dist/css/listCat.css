@@ -1,0 +1,126 @@
+
+.cat-list {
+    width: min(1150px, 90%);
+    margin: 75px auto 100px;
+    min-height: calc(100vh - 260px);
+}
+
+.list-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 35px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid var(--color-beige);
+}
+
+.admin-title {
+    color: var(--color-wine);
+    font-family: var(--font-title);
+    font-size: clamp(32px, 4vw, 43px);
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.table-wrap {
+    width: 100%;
+    overflow-x: auto;
+    background-color: #FFFFFF;
+    border: 1px solid var(--color-beige);
+    box-shadow: 0 12px 35px rgba(41, 35, 31, 0.05);
+}
+
+.cats-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.cats-table thead {
+    background-color: var(--color-wine);
+}
+
+.cats-table th {
+    padding: 21px 25px;
+    color: var(--color-cream);
+    font-family: var(--font-body);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.cats-table td {
+    padding: 21px 25px;
+    color: var(--color-dark);
+    font-size: 13px;
+    border-bottom: 1px solid var(--color-beige);
+}
+
+.cats-table tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+.cats-table tbody tr:hover {
+    background-color: #FBF6F2;
+}
+
+.cats-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.table-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.table-info {
+    color: var(--color-gray);
+    font-size: 12px;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.pagination button,
+.pagination a {
+    min-width: 36px;
+    height: 36px;
+    padding: 0 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--color-beige);
+    background-color: #FFFFFF;
+    color: var(--color-wine);
+    font-family: var(--font-body);
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.pagination button:hover,
+.pagination a:hover {
+    background-color: var(--color-beige);
+}
+
+.pagination button.active,
+.pagination a.active {
+    background-color: var(--color-wine);
+    border-color: var(--color-wine);
+    color: var(--color-cream);
+}
+
+.pagination button:disabled,
+.pagination a:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
